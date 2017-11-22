@@ -2,15 +2,19 @@
   "name": "clone_web",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon server.js",
+    "client": "npm run start --prefix twitta",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "concurrently": "^3.5.1",
     "create-react-app": "^1.4.3",
     "express": "^4.16.2",
+    "nodemon": "^1.12.1",
     "twit": "^2.2.9"
   }
 }
