@@ -13,7 +13,6 @@ module.exports= (app) => {
 
   app.use('/api/twit/home_timeline', (req, res)=>{
     tObj.get('statuses/home_timeline', (err, data, response) => {
-      console.log(data);
       res.send(data);
     });
   });
