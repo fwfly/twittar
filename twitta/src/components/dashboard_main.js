@@ -6,8 +6,7 @@ import DashboardRight from './dashboard_right';
 
 export default ()=>{
   return (
-    <div className="main-dashboard">
-      this is main dashsboard
+    <div className="dashboard-main">
       <DashboardLeft />
       <DashboardCenter />
       <DashboardRight />

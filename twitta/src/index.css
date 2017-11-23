@@ -3,3 +3,21 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.dashboard-main{
+  padding: 55px 14px 15px;
+  position: relative;
+  width: 1189px;
+}
+
+.dashboard{
+  float : left;
+  width : 289px;
+
+}
+
+.dashboard-center{
+  float: left;
+  margin: 1 10px;
+  width: 589px;
+}

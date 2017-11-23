@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-import DashboardMain from './containers/dashboard_main';
-import TopBar from './containers/topbar';
+import DashboardMain from './components/dashboard_main';
+import TopBar from './components/topbar';
 
 class App extends Component {
   render() {

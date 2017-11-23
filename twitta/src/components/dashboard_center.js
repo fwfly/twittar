@@ -1,9 +1,9 @@
 import React from 'react';
-import StreamList from '../components/stream_list';
+import StreamList from "../containers/stream_list";
 
 export default ()=>{
   return(
-    <div className="dashboard-cneter">
+    <div className="dashboard-center">
       dashboard center
       <StreamList />
     </div>
