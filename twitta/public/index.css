@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #e6ecf0;
+}
+
+.dashboard-main{
+  padding: 55px 14px 15px;
+  position: relative;
+  width: 1190px;
+}
+
+.dashboard{
+  float : left;
+  width : 289px;
+
+}
+
+.dashboard-center{
+  float: left;
+  margin: 0 10px;
+  width: 589px;
+}
+
+.tweet-content{
+  min-height: 51px;
+  padding:9px 12px;
+}
+
+.content{
+  margin-left: 58px;
+  text-align:left;
+}
+
+.fullname{
+  word-break:break-all;
+  font-size:14px;
+  font-weight:bold;
+}
+.username{
+  color:#657786;
+}

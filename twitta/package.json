@@ -2,9 +2,11 @@
   "name": "twitta",
   "version": "0.1.0",
   "private": true,
-  "proxy":"http://localhost:5000",
+  "proxy": "http://localhost:5000",
   "dependencies": {
+    "bootstrap": "^3.3.7",
     "react": "^16.1.1",
+    "react-bootstrap": "^0.31.5",
     "react-dom": "^16.1.1",
     "react-scripts": "1.0.17"
   },

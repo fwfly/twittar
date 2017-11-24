@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-
+import {ListGroup, ListGroupItem} from 'react-bootstrap';
 
 export default class StreamList extends Component{
 
@@ -25,9 +25,20 @@ export default class StreamList extends Component{
     else{
       return items.map((item) => {
         return(
-          <li>
-            {item.text}
-          </li>
+          <ListGroupItem>
+            <div className="tweet-content">
+              <div className="content">
+                <div className="content-header">
+                  <span className="fullname">{item.user.name}</span>
+                  <span> </span>
+                  <span className="username">{"@" + item.user.screen_name}</span>
+                </div>
+                <div className="content-text">
+                  {item.text}
+                </div>
+              </div>
+            </div>
+          </ListGroupItem>
         );
       });
 
@@ -37,9 +48,9 @@ export default class StreamList extends Component{
   render(){
     return (
       <div className="stream">
-        <ol>
+        <ListGroup>
           {this.renderList()}
-        </ol>
+        </ListGroup>
       </div>
     );
   }
