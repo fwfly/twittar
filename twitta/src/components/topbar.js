@@ -9,10 +9,10 @@ export default ()=>{
       <div className="topbar-inner">
         <div className="topbar-container">
           <Nav  bsStyle="pills" >
-            <NavItem eventKey={1}><Glyphicon glyph="home" />Home</NavItem>
-            <NavItem eventKey={2}><Glyphicon glyph="flash" />News</NavItem>
-            <NavItem eventKey={3}><Glyphicon glyph="bell" />Notification</NavItem>
-            <NavItem eventKey={4}><Glyphicon glyph="envelope" />Messages</NavItem>
+            <NavItem eventKey={1}><Glyphicon glyph="home" /><span className="twittar-btn-text">Home</span></NavItem>
+            <NavItem eventKey={2}><Glyphicon glyph="flash" /><span className="twittar-btn-text">News</span></NavItem>
+            <NavItem eventKey={3}><Glyphicon glyph="bell" /><span className="twittar-btn-text">Notification</span></NavItem>
+            <NavItem eventKey={4}><Glyphicon glyph="envelope" /><span className="twittar-btn-text">Messages</span></NavItem>
           </Nav>
         </div>
       </div>
