@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import {ListGroup, ListGroupItem} from 'react-bootstrap';
 
+import StreamDetail from '../components/Stream_detail';
+
 export default class StreamList extends Component{
 
   constructor(props){
@@ -26,18 +28,7 @@ export default class StreamList extends Component{
       return items.map((item) => {
         return(
           <ListGroupItem>
-            <div className="tweet-content">
-              <div className="content">
-                <div className="content-header">
-                  <span className="fullname">{item.user.name}</span>
-                  <span> </span>
-                  <span className="username">{"@" + item.user.screen_name}</span>
-                </div>
-                <div className="content-text">
-                  {item.text}
-                </div>
-              </div>
-            </div>
+            <StreamDetail stream_data={item} />
           </ListGroupItem>
         );
       });

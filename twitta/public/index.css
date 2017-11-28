@@ -29,8 +29,29 @@ body {
 }
 
 .content{
+
   margin-left: 58px;
   text-align:left;
+}
+
+.content-body{
+  margin-top: 12px;
+  padding-bottom: 2px;
+}
+
+.content-footer{
+  display: table;
+  width: 100%;
+}
+
+.twittar-btn{
+  background-image: none;
+  box-shadow: none;
+  border: none;
+}
+.twittar-btn-text{
+  font-weight:bold;
+  margin-left:6px;
 }
 
 .fullname{
