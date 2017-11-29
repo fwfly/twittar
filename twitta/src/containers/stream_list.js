@@ -1,26 +1,23 @@
 import React, {Component} from 'react';
 import {ListGroup, ListGroupItem} from 'react-bootstrap';
+import { connect } from 'react-redux';
 
+import * as actions from '../actions';
 import StreamDetail from '../components/Stream_detail';
 
-export default class StreamList extends Component{
+class StreamList extends Component{
 
   constructor(props){
     super(props);
-    this.state = {streamItems: []};
   }
 
 
   componentDidMount(){
-    fetch('/api/twit/home_timeline')
-     .then((res) => res.json())
-     .then((jsondata)=>{
-       this.setState({ streamItems: jsondata} );
-     });
+    this.props.fetchStream();
   }
 
   renderList(){
-    let items = this.state.streamItems;
+    let items = this.props.streams;
     if(!items){
       return "loading";
     }
@@ -46,3 +43,9 @@ export default class StreamList extends Component{
     );
   }
 }
+
+function mapStateToProps( {streams} ){
+  return {streams};
+}
+
+export default connect(mapStateToProps, actions)(StreamList);
