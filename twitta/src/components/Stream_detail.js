@@ -39,7 +39,6 @@ export default class StreamDetail extends Component {
     let retweet_count = this.props.stream_data.retweet_count;
     let profile_img = this.props.stream_data.user.profile_image_url;
 
-    console.log(profile_img);
     return(
       <div className="tweet-content">
         <div className="content">

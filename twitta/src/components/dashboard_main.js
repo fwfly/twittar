@@ -9,7 +9,6 @@ export default ()=>{
     <div className="dashboard-main">
       <DashboardLeft />
       <DashboardCenter />
-      <DashboardRight />
     </div>
   );
 }

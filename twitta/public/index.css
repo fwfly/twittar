@@ -72,3 +72,66 @@ body {
 .username{
   color:#657786;
 }
+
+.profile-card{
+  background-color: white;
+  position:relative;
+}
+
+.profile-card-bg{
+  background-color: #1DA1F2;
+  height:95px;
+  width: 100%;
+  margin-top: -1px;
+}
+
+.profile-avatar-content{
+  width:74px;
+}
+
+.profile-photo{
+  background-color: white;
+  border-radius: 50%;
+  margin: -30px 0 0 8px;
+  padding: 1px;
+  display: inline-block;
+  min-width: 100%;
+
+}
+.profile-photo > img{
+  border-radius: 50%;
+  height: 72px;
+  width:72px;
+  border: 2px solid #fff;
+}
+
+.profile-user{
+  width:185px;
+  position: absolute;
+  top: 103px;
+  left: 90px;
+  text-align: left;
+}
+
+.profile-name{
+ width: 100%;
+ overflow: hidden;
+ text-overflow: ellipsis;
+ white-space:nowrap;
+ word-wrap:normal;
+
+ color: black;
+ font-weight: bold;
+ font-size: 18px;
+ line-height: 25px;
+}
+
+.profile-name > a{
+  color: inherit;
+}
+
+.profile-status{
+  padding : 16px 16px 16px 16px;
+  width : 256px;
+  height: 37px;
+}

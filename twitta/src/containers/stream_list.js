@@ -11,7 +11,6 @@ class StreamList extends Component{
     super(props);
   }
 
-
   componentDidMount(){
     this.props.fetchStream();
   }

@@ -33,7 +33,6 @@ module.exports= (app) => {
   app.use('/api/twit/statuses/lookup/*', (req, res)=>{
     let user_id = req.originalUrl.split('/')[5];
     console.log(user_id);
-    // 2244994945
     tObj.get('/statuses/lookup',{id : user_id}, (err, data, response) => {
       console.log(data);
       res.send(data);
@@ -42,10 +41,27 @@ module.exports= (app) => {
 
    app.use('/api/twit/users/show/*', (req, res)=>{
     let user_id = req.originalUrl.split('/')[5];
-    console.log(user_id);
-    // 2244994945
     tObj.get('/users/show',{user_id : user_id}, (err, data, response) => {
       console.log(data);
+      res.send(data);
+    });
+  });
+
+  app.use('/api/twit/trends/place/*', (req, res)=>{
+    let wdid = req.originalUrl.split('/')[5];
+    tObj.get('/trends/place',{id : wdid}, (err, data, response) => {
+      res.send(data);
+    });
+  });
+
+  app.use('/api/account', (req, res)=>{
+    tObj.get('/account/verify_credentials', (err, data, response) => {
+      res.send(data);
+    });
+  });
+
+  app.use('/api/account/settings', (req, res)=>{
+    tObj.get('/account/settings', (err, data, response) => {
       res.send(data);
     });
   });

@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import StreamReducer from './streamReducer';
+import streamReducer from './streamReducer';
+import profileReducer from './profileReducer'
 
 export default combineReducers({
-  streams: StreamReducer
+  streams: streamReducer,
+  profile: profileReducer
 });
