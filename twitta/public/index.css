@@ -34,6 +34,16 @@ body {
   text-align:left;
 }
 
+.profile-img{
+  float: left;
+  margin-top: 3px;
+  margin-left: -58px;
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
 .content-body{
   margin-top: 12px;
   padding-bottom: 2px;

@@ -37,11 +37,14 @@ export default class StreamDetail extends Component {
     let item = this.props.stream_data;
     let favorite_count = this.props.stream_data.favorite_count;
     let retweet_count = this.props.stream_data.retweet_count;
+    let profile_img = this.props.stream_data.user.profile_image_url;
 
+    console.log(profile_img);
     return(
       <div className="tweet-content">
         <div className="content">
           <div className="content-header">
+            <img src={profile_img} className="profile-img" />
             <span className="fullname">{item.user.name}</span>
             <span> </span>
             <span className="username">{"@" + item.user.screen_name}</span>
