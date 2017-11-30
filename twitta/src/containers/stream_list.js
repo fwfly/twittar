@@ -12,11 +12,12 @@ class StreamList extends Component{
   }
 
   componentDidMount(){
-    this.props.fetchStream();
+    setTimeout( () => this.props.fetchStream(), 1000)
   }
 
   renderList(){
     let items = this.props.streams;
+    console.log(items);
     if(!items){
       return "loading";
     }

@@ -9,6 +9,7 @@ body {
   padding: 55px 14px 15px;
   position: relative;
   width: 1190px;
+  margin: 0 auto;
 }
 
 .dashboard{
@@ -159,4 +160,33 @@ body {
   padding-top:3px;
   font-weight:bold;
   line-height:1;
+}
+
+.trends-card{
+  background-color: white;
+  margin-top: 10px;
+}
+
+.trends-group{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 12px;
+  list-style: none;
+  text-align:left
+}
+
+.trends-group-item{
+  margin-bottom: 10px;
+  line-height:17px
+}
+
+.trends-group-item-head{
+  font-weight:bold;
+  font-size:14px;
+}
+
+.trends-group-item-info{
+  color:#657786;
+  display: block;
+  font-size:12px;
 }

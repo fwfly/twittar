@@ -66,4 +66,12 @@ module.exports= (app) => {
     });
   });
 
+
+  //https://api.twitter.com/1.1/application/rate_limit_status.json?resources=help,users,search,statuses
+  app.use('/rate', (req, res) =>{
+     tObj.get('/application/rate_limit_status', (err, data, response) => {
+      res.send(data);
+    });
+  })
+
 }
