@@ -6,9 +6,12 @@ import DashboardRight from './dashboard_right';
 
 export default ()=>{
   return (
-    <div className="dashboard-main">
-      <DashboardLeft />
-      <DashboardCenter />
+    <div>
+      <div className="dashboard-main">
+        <DashboardLeft />
+        <DashboardCenter />
+        <DashboardRight />
+      </div>
     </div>
   );
 }

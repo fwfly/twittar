@@ -10,18 +10,40 @@ body {
   position: relative;
   width: 1190px;
   margin: 0 auto;
+  display: table;
 }
 
 .dashboard{
   float : left;
   width : 289px;
+}
 
+.about-card-tech-link{
+  padding-right:8px;
+  color: #657786;
+}
+
+.about-card{
+  background:white;
 }
 
 .dashboard-center{
   float: left;
   margin: 0 10px;
   width: 589px;
+}
+
+.dashboard-right{
+  float: left;
+  width: 260px;
+}
+
+.about-description{
+  display:block;
+}
+
+.about-card-header{
+  margin:0;
 }
 
 .tweet-content{
@@ -168,9 +190,7 @@ body {
 }
 
 .trends-group{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 12px;
+  padding: 10px 12px;
   list-style: none;
   text-align:left
 }
@@ -189,4 +209,15 @@ body {
   color:#657786;
   display: block;
   font-size:12px;
+}
+
+.trends-card-header{
+  padding: 10px 0 0 10px;
+  text-align: left;
+}
+
+.trends-card-header > h3{
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
 }

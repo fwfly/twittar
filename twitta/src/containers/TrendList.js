@@ -45,6 +45,9 @@ class TrendList extends Component{
     console.log(this.props.trends);
     return (
       <div className="trends-card">
+        <div className="trends-card-header">
+          <h3>Trend for you</h3>
+        </div>
         <ul className="trends-group">
           {this.renderTrends()}
         </ul>
