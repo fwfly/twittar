@@ -4,6 +4,28 @@ body {
   font-family: sans-serif;
   background-color: #e6ecf0;
 }
+.twittar-text > a:link{
+  color: gray;
+}
+
+.twittar-text-active {
+  color: #1DA1F2;
+  background-color: transparent;
+}
+
+.twittar-text > a:hover{
+  color: #1DA1F2;
+}
+
+.twittar-header{
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  left: 50%;
+  margin-left: -12px;
+  margin-top:10px;
+}
 
 .dashboard-main{
   padding: 55px 14px 15px;
