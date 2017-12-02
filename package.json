@@ -16,5 +16,9 @@
     "express": "^4.16.2",
     "nodemon": "^1.12.1",
     "twit": "^2.2.9"
+  },
+  "devDependencies": {
+    "helmet": "^3.9.0",
+    "serve-static": "^1.13.1"
   }
 }
